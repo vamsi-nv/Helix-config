@@ -1,0 +1,48 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+bufferline = "always"
+clipboard-provider = "windows"
+idle-timeout = 100
+completion-trigger-len = 1
+
+[editor.auto-save]
+auto-save = true
+after-delay.enable = true
+after-delay.timeout = 1000
+
+
+[editor.statusline]
+left = ["mode", "spinner", "file-absolute-path", "diagnostics"]
+center = []
+right = ["file-type", "position", "position-percentage"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+
+[editor.indent-guides]
+render = true
+character = "▏"# Some characters that work well: "▏", "┆", "┊", "⸽"
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+
+
+[keys.normal]
+C-s = ":w"
+"tab" = ":buffer-next"
+
