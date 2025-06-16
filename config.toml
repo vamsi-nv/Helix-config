@@ -46,3 +46,16 @@ nnbsp = "none"
 C-s = ":w"
 "tab" = ":buffer-next"
 
+# [[language]]
+# name = "python"
+# scope = "source.python"
+# file-types = ["py"]
+# comment-token = "#"
+# indent = { tab-width = 4, unit = "    " }
+# language-servers = ["pyright"]
+
+# [language-server.pyright]
+# command = "pyright-langserver"
+# args = ["--stdio"]
+
+
